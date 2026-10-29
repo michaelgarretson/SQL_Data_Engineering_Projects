@@ -19,5 +19,15 @@ ALTER TABLE dev.applications_fact
 RENAME COLUMN follow_up_timestamp TO followup_date;
 
 /*
-
+┌─────────────────────────────────────┐
+│          applications_fact          │
+│                                     │
+│ application_id     integer not null │
+│ candidate_id       integer          │
+│ job_id             integer          │
+│ date_applied       date             │
+│ application_status varchar          │
+│ internal_candidate boolean          │
+│ followup_date      date             │
+└─────────────────────────────────────┘
 */
